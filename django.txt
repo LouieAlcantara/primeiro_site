@@ -1,0 +1,44 @@
+ARQUIVOS DENTRO DO CORE
+_init_.py > Modulador;
+settings.py > Todas as configurações do ambiente;
+urls.py > Arquivos de rotas, nele tem o direcionamento dentro do DJANGO;
+asgi.py e wsgi.py > Arquivos de configurações 
+
+ARQUIVOS DENTRO DO LIB
+Fica tudo que for instalado no ambiente;
+Depois que criar o ambiente vai na pasta .gitgnore e coloca o Lib\ e Scripts\
+Alterações no settings.py > Language_code "pt-br" e Time_zone "America/Fortaleza"
+
+DEPOIS QUE CRIAR O APP
+Apresentar o Index para o Core
+(Adicionar o novo app na lista INSTALLED_APPS em settings.py)
+Conectar o urls do core com o urls do app path('index/', include('index.urls'))
+
+TEMPLATES
+Criar a pasta de templates
+VIRTUAL ENVIROMENT
+
+Criar a virtualenv
+(py -m virtualenv projeto)
+Entrar na pasta
+(cd projeto\)
+Ativar o ambiente
+(.\Scripts\activate)
+Comando (code .)
+Desativar virtualenv
+(deactivate)
+rm nome_projeto
+_________
+Passo a passo depois que criar o arquivo
+code .
+Ctrol + Shift + P >select interpreter
+Criar o requirements (pip freeze > .\requimerements.txt) para atualizar os pacotes de instalação no arquivo requiments.
+Criando o Core (django-admin startproject core .)
+Python manage.py (python manage.py runserver)
+
+NAME SPACE > É o caminho especificado de um arquivo (arquivo\index.html)
+base_templates
+Diretório raiz do core
+('DIRS': [BASE_DIR / 'base_templates'],)
+
+NOME DO ERRO "COLISÃO DE ARQUIVO" quando é direcionado para o index raiz e não o especificado.
