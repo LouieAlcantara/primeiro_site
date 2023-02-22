@@ -2,4 +2,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def produtos(request):
-    return render(request, 'produtos/index.html')
+    return render(request, 'produtos/index.html',context= {'name':'Louie Alcantara'},)

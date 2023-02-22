@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'produtos',
     'sobrenos',
     'contato',
+    'estatico',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'base_templates'],
+        'DIRS': [BASE_DIR / 'base_templates' / 'globals'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

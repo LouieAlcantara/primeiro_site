@@ -21,4 +21,6 @@ urlpatterns = [
     path('index/', include('index.urls')),
     path('produtos/',include('produtos.urls')),
     path('sobrenos/',include('sobrenos.urls')),
+    path('contato/',include('contato.urls')),
+    path('estatico/',include('estatico.urls'),)
 ]
